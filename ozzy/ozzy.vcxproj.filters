@@ -27,9 +27,15 @@
     <ClInclude Include="src\ozzy\entryPoint.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="src\ozzy\log.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ozzy\application.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ozzy\log.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

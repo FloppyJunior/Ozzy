@@ -57,6 +57,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>OZ_PLATFORM_WINDOWS;OZ_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);OZ_PLATFORM_WINDOWS;OZ_BUILD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)ozzy\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -71,6 +72,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>OZ_PLATFORM_WINDOWS;OZ_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);OZ_PLATFORM_WINDOWS;OZ_BUILD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)ozzy\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -80,12 +82,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\ozzy\log.h" />
     <ClInclude Include="src\ozzy.h" />
     <ClInclude Include="src\ozzy\application.h" />
     <ClInclude Include="src\ozzy\core.h" />
     <ClInclude Include="src\ozzy\entryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\ozzy\log.cpp" />
     <ClCompile Include="src\ozzy\application.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

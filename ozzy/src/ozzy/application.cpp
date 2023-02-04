@@ -10,6 +10,6 @@ namespace ozzy {
 	}
 
 	void application::run(void) {
-		while (true);
+		//while (true);
 	}
 }
